@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build &&  xcopy build ..\\Backend\\production\\ /E/H",
+    "build": "react-scripts build &&  xcopy build ..\\Backend\\production\\ /E/H/Y",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
