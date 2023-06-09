@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ListExample from "./Components/ListExample/ListExample";
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
         {
           path: "/",
           element: <Home />,          
+        },
+        {
+          path: "/listExample",
+          element: <ListExample />
         },
         {
           path: "/incentives",
