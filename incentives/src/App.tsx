@@ -1,6 +1,7 @@
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
-import Login from "./Components/Login/Login"
+import Login from "./Components/Login/Login";
+import Dialog from "./Components/Dialog/Dialog";
 import Incentives from "./Components/Incentives/Incentives";
 import {
   createBrowserRouter,
@@ -40,6 +41,10 @@ function App() {
         {
           path: "/login",
           element: <Login />,          
+        },
+        {
+          path: "/context",
+          element: <Dialog/>,          
         },
         {
           path: "*",
