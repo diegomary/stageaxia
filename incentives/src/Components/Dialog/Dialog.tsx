@@ -1,6 +1,6 @@
 import * as React from "react";
 import  { useState } from "react";
-import './Dialog.scss';
+import classes from './Dialog.module.scss';
 
 function Child({user,change}:any) {  
   return (

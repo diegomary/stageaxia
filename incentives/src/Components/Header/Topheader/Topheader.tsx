@@ -20,7 +20,10 @@ function Topheader({title} :any) {
           <button onClick={() => { navigate("/login"); }}>Login</button>
         </div>
         <div>
-          <button onClick={() => { navigate("/context"); }}>Context</button>
+          <button onClick={() => { navigate("/dialog"); }}>Dialog</button>
+        </div>
+        <div>
+          <button onClick={() => { navigate("/preservation"); }}>Preservation</button>
         </div>
       </div>
     </>

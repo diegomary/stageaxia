@@ -2,16 +2,18 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Dialog from "./Components/Dialog/Dialog";
+import Preservation from "./Components/Preservation/Preservation";
 import Incentives from "./Components/Incentives/Incentives";
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import ListExample from "./Components/ListExample/ListExample";
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Header />,
@@ -43,8 +45,12 @@ function App() {
           element: <Login />,          
         },
         {
-          path: "/context",
+          path: "/dialog",
           element: <Dialog/>,          
+        },
+        {
+          path: "/preservation",
+          element: <Preservation/>,          
         },
         {
           path: "*",

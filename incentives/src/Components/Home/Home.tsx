@@ -1,6 +1,6 @@
 import * as React from "react";
 import  { useState, useEffect } from "react";
-import './Home.module.scss';
+import classes from './Home.module.scss';
 import mqtt from "precompiled-mqtt";
 
 function Home() {  
@@ -55,7 +55,7 @@ const topics = {
 
     return () => {client.end()};  // Disconnect when the component is removed from the DOM  
 
-  },[]); // this use Effect will run once at the beginning
+  }); // this use Effect will run once at the beginning
 
   return (
     <div>
