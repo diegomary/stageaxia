@@ -10,6 +10,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ListExample from "./Components/ListExample/ListExample";
+import FetchData from "./Components/FetchData/FetchData";
 
 
 function App() {
@@ -51,6 +52,10 @@ function App() {
         {
           path: "/preservation",
           element: <Preservation/>,          
+        },
+        {
+          path: "/fetchData",
+          element : <FetchData/>
         },
         {
           path: "*",
